@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta  name="charset" content="UTF-8">
+        <meta name="author" content="Camilo C">
+        <meta name="viewport" width="device-width">
+        <meta name="description" content="Formulario para obtener datos de clientes">
+    </head>
+    <body>
+        <fieldset>
+            <legend><h1>Formulario</h1></legend>
+            <p>
+                <label for="nombre">Nombre de Usuario *: </label><br/>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Pechyplayers" size="40" required>
+            </p>
+            <p>
+                <label for="email">Correo electr&oacute;nico *:</label><br/>
+                <input type="email" id="email" name="email" placeholder="Ej: example@thisisanexample.com" size="40" required>
+            </p>
+            <p>
+                <label for="edad">Edad: </label><br/>
+                <input type="text" id="edad" name="edad" placeholder="Ej: 69">
+            </p>
+            <p>
+                <label for="genero">Género:</label><br/>
+                <input type="radio" name="genero" id="masculino" value="masc">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="femenino" value="fem">
+                <label for="femenino">Femenino</label>
+            </p>
+            <p>
+                <label for="recomendado">Recomendado por:</label><br/>
+                <select>
+                    <option value="google">Google</option>
+                    <option value="amigo">Amigo</option>
+                    <option value="redes">Redes Sociales</option>
+                </select>
+            </p>
+            <p>
+                <label for="comentario">Comentario *:</label><br/>
+                <textarea id="comentario" cols="30" rows="5" required></textarea>
+            </p>
+        </fieldset>
+    </body>
+</html>
