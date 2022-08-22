@@ -1,0 +1,64 @@
+* {
+    font-family: Helvetica;
+    line-height: 1.5;
+}
+
+body {
+    
+    padding: 25px;
+}
+
+#title {
+    color: purple;
+    font-style: italic;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+#first_div p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p > :not(b) {
+    color: fuchsia;
+}
+
+p > b {
+    color: blue;
+}
+
+[title*='definición'] {
+    color: red;
+}
+
+a[href$='google.com'] {
+    color: green;
+}
+
+h3 + p {
+    font-style: italic;
+    color: darkblue;
+}
+
+table {
+    padding: 15px;
+    width: 100%;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+table tr code {
+    color: orange;
+}
+
+.second-table tr{
+    font-family: 'Courier New';
+}
+
+.wikitable {
+    letter-spacing: 1.5px;
+}
