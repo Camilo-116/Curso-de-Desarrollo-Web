@@ -1,0 +1,25 @@
+body {
+    padding: 25px;
+    font-family: Verdana;
+}
+
+p {
+    color:  darkblue;
+    font-size: 14px;
+    margin: 15px;
+}
+
+h1 {
+    color: red;
+    font-size: 38px;
+    font-style: italic;
+}
+
+h4 {
+    color: orange;
+    font-size: 18px;
+}
+
+ul {
+    color: darkblue
+}
