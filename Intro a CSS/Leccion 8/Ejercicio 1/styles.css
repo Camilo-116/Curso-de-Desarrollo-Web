@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url(images/globe.jpeg);
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: 100px auto;
+    width: 80%;
+}
+
+tr:first-of-type {
+    color: white;
+    background-image: -webkit-linear-gradient(#051a41, #083659, #356b8c) !important;
+    background-image: -moz-linear-gradient(#051a41, #083659, #356b8c) !important;
+    background-image: -o-linear-gradient(#051a41, #083659, #356b8c) !important;
+    background-image: linear-gradient(#051a41, #083659, #356b8c) !important;
+}
+
+th,
+td {
+    width: 200px;
+    padding: 40px;
+    text-align: center;
+    font-size: 24px;
+    padding: 40px;
+    border: 1px solid white;
+}
+
+#albania:hover {
+    background-image: url(images/albania.png);
+    color: white;
+}
+
+#canada:hover {
+    background-image: url(images/canada.png);
+}
+
+#albania:hover, #canada:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hungria:hover {
+    background-image: url(images/hungria.png);
+}
+
+#kenia:hover {
+    background-image: url(images/kenia.png);
+    color: white;
+}
+
+#hungria:hover, #kenia:hover {
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
