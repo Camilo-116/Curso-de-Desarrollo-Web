@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.c1 {
+    background-color: cyan;
+    order: 2;
+    width: 50%;
+}
+
+.c2 {
+    background-color: lightseagreen;
+    order: 1;
+    width: 20%;
+    letter-spacing: 0.2em;
+}
+
+.c3 {
+    background-color: magenta;
+    order: 3;
+    width: 30%;
+    letter-spacing: 0.2em;
+}
+
+.c1 h2, .c2 h2, .c3 h2 {
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.c1 p, .c2 p, .c3 p {
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .c1, .c2, .c3 {
+        width: 100%;
+    }
+
+    .c1 {
+        order: 1;
+    }
+
+    .c2 {
+        order: 2;
+    }
+
+    .c3 {
+        order: 3;
+    }
+}
+
+@media all and (min-width: 641px) and (max-width: 1024px) {
+
+    .c1, .c2 {
+        width: 50%;
+    }
+
+    .c3 {
+        width: 100%;
+    }
+}
