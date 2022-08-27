@@ -1,0 +1,40 @@
+/* Padre de las imagenes/tablas */
+html {
+    counter-reset: contador-img contador-tab;
+}
+
+/* Imagen */
+.fig {
+    display: table;
+    margin: 0 auto;
+    counter-increment: contador-img;
+}
+
+/* Tabla */
+.tab {
+    display: table;
+    margin: 0 auto;
+    counter-increment: contador-tab;
+}
+
+/* Caption de la Imagen/Tabla */
+.fig figcaption, .tab figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.2em;
+    padding: 0.1em;
+    font-size: 0.8em;
+    color: navy;
+}
+
+/* Número de imagen */
+.ref-fig:after {
+    content: " "counter(contador-img)". ";
+}
+
+/* Número de tabla */
+.ref-tab:after {
+    content: " "counter(contador-tab)". ";
+}

@@ -1,0 +1,36 @@
+h1{
+    background-color: darkviolet;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 26px;
+}
+
+.content {
+    font-size: 1em;
+}
+
+h2 {
+    background-color: blue;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}

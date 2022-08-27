@@ -1,0 +1,118 @@
+@font-face {
+    
+    font-family: 'Dancing Script', cursive;
+    src: url('fonts/DancingScript-VariableFont_wght.ttf');
+
+}
+
+body {
+    margin: 0;
+    margin-bottom: 5em;
+    font-family: 'Dancing Script', cursive;
+}
+
+header {
+    background: -moz-linear-gradient(to right, rgb(47, 133, 214), white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+#logo {
+    height: 90%;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    /* float: right; */
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.image img, .image source {
+    border-radius: 5%;
+    width: 80vw;
+    margin: 1em;
+}
+
+footer {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+}
+
+footer h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: aqua;
+}
+
+@media screen and (max-width: 500px) {
+    footer h2 {
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    header {
+        font-size: 1em;
+        background: -moz-linear-gradient(to right, rgb(14, 66, 157), pink);
+    }
+
+    #logo {
+        display: none;
+    }
+
+}
+
+@media print {
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .content {
+        line-height: 1;
+        letter-spacing: 7px;
+        font-size: 2em;
+        color: purple;
+    }
+
+    .image img, .image picture {
+        border-radius: 0;
+    }
+}
