@@ -21,7 +21,6 @@ html {
 .fig figcaption, .tab figcaption {
     display: table-caption;
     caption-side: bottom;
-    text-align: center;
     font-style: italic;
     line-height: 1.2em;
     padding: 0.1em;
