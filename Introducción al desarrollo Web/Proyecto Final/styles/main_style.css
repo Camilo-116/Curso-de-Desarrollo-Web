@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: #FEF9A7;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 4.5em;
+}
+
+#logo {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-right: 25px;
+    float: left;
+}
+
+/* FEF9A7
+FAC213
+F77E21
+D61C4E */
