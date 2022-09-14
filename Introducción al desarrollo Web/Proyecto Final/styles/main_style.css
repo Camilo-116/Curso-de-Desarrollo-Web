@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -29,6 +30,11 @@ h1 {
 p {
     text-align: center;
     margin: 0;
+}
+
+a {
+    display: inherit;
+    color: inherit;
 }
 
 #logo {
@@ -180,7 +186,7 @@ p {
 
 .welcome p {
     font-weight: bold;
-    color: white;
+
     min-width: 0;
     font-size: 1.5em;
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
@@ -190,7 +196,7 @@ p {
 .schedule {
     display: inherit;
     align-items: center;
-    color: white;
+
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
         0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
 }
@@ -205,9 +211,9 @@ p {
     margin: 0 0 5px 0;
 }
 
-.book{
+.book {
     font-size: 1.5em;
-    color: white;
+
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
         0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
 }
@@ -219,7 +225,7 @@ p {
 
 .groupC, .privateC {
     font-size: 1.8em;
-    color: white;
+
     text-shadow: 1.5px 0 #000000, -1.5px 0 #000000, 0 1.5px #000000, 0 -1.5px #000000,
         0.75px 0.75px #000000, -0.75px -0.75px #000000, 0.75px -0.75px #000000, -0.75px 0.75px #000000;
 }
@@ -227,14 +233,110 @@ p {
 .groupC {
     background-image: url('../images/volley.jpg');
     background-size: 120%;
+    opacity: 85%;
     background-repeat: no-repeat;
+}
+
+.groupC:hover {
+    animation: toOpaque 150ms linear;
 }
 
 .privateC {
     background-image: url('../images/backhand.jpg');
     background-size: 100%;
+    opacity: 85%;
     background-repeat: no-repeat;
 }
+
+.layer {
+    display: inherit;
+    justify-items: inherit;
+    align-items: inherit;
+    width: 100%;
+    height: 100%;
+    background-color: #DF6536;
+    opacity: 0%;
+}
+
+.layer:hover {
+    animation: enter 150ms ease;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 20%;
+    }
+}
+
+@keyframes toSolid {
+    0% {
+        opacity: 20%;
+    }
+
+    100% {
+        opacity: 40%;
+    }
+}
+
+@keyframes toColor {
+    0% {
+        background-image: url(../images/forehand.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    50% {
+        opacity: 20%;
+    }
+    51% {
+        background-color: #DF6536;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.blog {
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+        0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
+    animation: toColor 300ms ease-in;
+}
+
+.blog:hover {
+    text-shadow: 1.2px 0 #000000, -1.2px 0 #000000, 0 1.2px #000000, 0 -1.2px #000000,
+    0.6px 0.6px #000000, -0.6px -0.6px #000000, 0.6px -0.6px #000000, -0.6px 0.6px #000000;
+    background-image: url(../images/forehand.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: toSolid 150ms ease-in;
+}
+
+.blog b {
+    font-size: 1.1em;
+}
+
+.blog p {
+    font-size: 1.4em;
+}
+
+.link {
+    display: inherit;
+    justify-items: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vh;
+}
+
+.link:hover {
+    color: #D61C4E;
+    text-decoration: underline #D61C4E;
+    cursor: pointer;
+}
+
+
+
 
 /* #FEF9A7
 #FAC213
