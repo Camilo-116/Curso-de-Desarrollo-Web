@@ -28,6 +28,7 @@ h1 {
 
 p {
     text-align: center;
+    margin: 0;
 }
 
 #logo {
@@ -124,6 +125,12 @@ p {
     grid-row: 4/6;
 }
 
+.doubles {
+    display: inherit;
+    align-items: center;
+    justify-items: center;
+}
+
 .doubles:first-of-type {
     border-top: 0.8vh solid white;
     border-bottom: 0.4vh solid white;
@@ -147,6 +154,9 @@ p {
 }
 
 .baseline {
+    display: inherit;
+    align-items: center;
+    justify-items: center;
     border-bottom: 0.4vh solid white;
     border-top: 0.4vh solid white;
 }
@@ -162,6 +172,9 @@ p {
 }
 
 .serve {
+    display: inherit;
+    align-items: center;
+    justify-items: center;
     border: 0.4vh solid white;
 }
 
@@ -175,24 +188,52 @@ p {
 }
 
 .schedule {
+    display: inherit;
+    align-items: center;
     color: white;
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
         0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
 }
 
 .H {
+    font-size: 1.2em;
     font-weight: bold;
     margin: 1vh;
 }
 
-.schedule p:nth-child(2n), .schedule p:last-of-type {
+.schedule p:last-of-type {
     margin: 0 0 5px 0;
 }
 
-.ball {
-    width: 30px;
-    height: 30px;
-    content: \f54b;
+.book{
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+        0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
+}
+
+.book b {
+    font-size: 1.4em;
+    margin: 0 2vw 0 2vw;
+}
+
+.groupC, .privateC {
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 1.5px 0 #000000, -1.5px 0 #000000, 0 1.5px #000000, 0 -1.5px #000000,
+        0.75px 0.75px #000000, -0.75px -0.75px #000000, 0.75px -0.75px #000000, -0.75px 0.75px #000000;
+}
+
+.groupC {
+    background-image: url('../images/volley.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.privateC {
+    background-image: url('../images/backhand.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /* #FEF9A7
