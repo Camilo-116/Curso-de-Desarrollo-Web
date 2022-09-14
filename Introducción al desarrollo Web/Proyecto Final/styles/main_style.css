@@ -245,6 +245,7 @@ a {
     background-image: url('../images/backhand.jpg');
     background-size: 100%;
     opacity: 85%;
+    z-index: 0;
     background-repeat: no-repeat;
 }
 
@@ -259,10 +260,12 @@ a {
 }
 
 .layer:hover {
-    animation: enter 150ms ease;
+    opacity: 20%;
+    transition: opacity .3s ;
+    /* animation: layerIn 150ms ease; */
 }
 
-@keyframes enter {
+@keyframes layerIn {
     0% {
         opacity: 0%;
     }
