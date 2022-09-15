@@ -6,6 +6,10 @@
 body {
     margin: 0;
     background-color: #dcd893;
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 header {
@@ -165,6 +169,19 @@ a {
     justify-items: center;
     border-bottom: 0.4vh solid white;
     border-top: 0.4vh solid white;
+    opacity: 90%;
+}
+
+.welcome:hover, .book:hover, .schedule:hover, .results:hover {
+    background-image: linear-gradient(to top,#981009, #fac013),
+     -moz-linear-gradient(to top,#981009, #fac013);
+    background-image: -webkit-linear-gradient(to top,#981009, #fac013),
+     -o-linear-gradient(to top,#981009, #fac013);
+    transition: background-image 100ms;
+}
+
+.doubles:active {
+    filter: brightness(120%) ;
 }
 
 .ltSide .baseline {
@@ -231,21 +248,14 @@ a {
 }
 
 .groupC {
-    background-image: url('../images/volley.jpg');
-    background-size: 120%;
-    opacity: 85%;
+    background-image: url('../images/slice.jpg');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-.groupC:hover {
-    animation: toOpaque 150ms linear;
 }
 
 .privateC {
     background-image: url('../images/backhand.jpg');
-    background-size: 100%;
-    opacity: 85%;
-    z-index: 0;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -255,23 +265,14 @@ a {
     align-items: inherit;
     width: 100%;
     height: 100%;
-    background-color: #DF6536;
+    background-color: #df663670;
     opacity: 0%;
+    transition: opacity 150ms;
 }
 
 .layer:hover {
-    opacity: 20%;
-    transition: opacity .3s ;
-    /* animation: layerIn 150ms ease; */
-}
-
-@keyframes layerIn {
-    0% {
-        opacity: 0%;
-    }
-    100%{
-        opacity: 20%;
-    }
+    opacity: 100%;
+    transition: opacity 300ms ;
 }
 
 @keyframes toSolid {
@@ -289,6 +290,7 @@ a {
         background-image: url(../images/forehand.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
+        background-position: center;
     }
     50% {
         opacity: 20%;
@@ -313,6 +315,7 @@ a {
     background-image: url(../images/forehand.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
     animation: toSolid 150ms ease-in;
 }
 
@@ -338,6 +341,66 @@ a {
     cursor: pointer;
 }
 
+.address {
+    background-image: url('../images/ball-in-court.jpg');
+    background-size: 100% 100%;
+}
+
+.address p {
+    font-size: 1.2em;
+    font-weight: bold;text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+    0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
+    z-index: 1;
+}
+
+.address .layer , .products .layer{
+    opacity: 100%;
+    background-color: #df663600;
+}
+
+.address .layer:hover, .products .layer:hover {
+    background-color: #df663670;
+    transition: background-color 150ms;
+}
+
+table, tr, th, td{
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: left;
+    background-color:#981009;
+}
+
+tbody {
+    background-color: #dcd893;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td {
+    color: #EE3A1E;
+}
+
+table .data:hover {
+    color: black;
+    background-color: white;
+}
+
+.products {
+    background-image: url('../images/products.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.products p{
+    font-size: 3.5em;
+    text-shadow: 1.5px 0 #000000, -1.5px 0 #000000, 0 1.5px #000000, 0 -1.5px #000000,
+    0.75px 0.75px #000000, -0.75px -0.75px #000000, 0.75px -0.75px #000000, -0.75px 0.75px #000000;
+}
 
 
 
