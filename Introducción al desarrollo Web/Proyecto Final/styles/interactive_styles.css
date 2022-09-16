@@ -1,0 +1,46 @@
+.doubles:active, .products:active {
+    filter: brightness(120%);
+}
+
+.link:hover {
+    color: #D61C4E;
+    text-decoration: underline #D61C4E;
+    cursor: pointer;
+}
+
+.welcome:hover, .book:hover, .schedule:hover, .results:hover {
+    background-image: linear-gradient(to top, #981009, #fac013),
+        -moz-linear-gradient(to top, #981009, #fac013);
+    background-image: -webkit-linear-gradient(to top, #981009, #fac013),
+        -o-linear-gradient(to top, #981009, #fac013);
+    transition: background-image 100ms;
+}
+
+.address .layer:hover, .products .layer:hover {
+    background-color: #df663670;
+    transition: background-color 150ms;
+}
+
+table .data:hover {
+    color: black;
+    background-color: white;
+}
+
+.layer:hover {
+    opacity: 100%;
+    transition: opacity 300ms;
+}
+
+.blog:hover {
+    text-shadow: 1.2px 0 #000000, -1.2px 0 #000000, 0 1.2px #000000, 0 -1.2px #000000,
+        0.6px 0.6px #000000, -0.6px -0.6px #000000, 0.6px -0.6px #000000, -0.6px 0.6px #000000;
+    transition: background 300ms;
+}
+
+.b1:hover {
+    background: url(../images/Federer.jpg) 100%/100% no-repeat;
+}
+
+.b2:hover {
+    background: url(../images/forehand.jpg) 100%/100% no-repeat;
+}

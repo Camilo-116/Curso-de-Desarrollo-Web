@@ -172,18 +172,6 @@ a {
     opacity: 90%;
 }
 
-.welcome:hover, .book:hover, .schedule:hover, .results:hover {
-    background-image: linear-gradient(to top,#981009, #fac013),
-     -moz-linear-gradient(to top,#981009, #fac013);
-    background-image: -webkit-linear-gradient(to top,#981009, #fac013),
-     -o-linear-gradient(to top,#981009, #fac013);
-    transition: background-image 100ms;
-}
-
-.doubles:active {
-    filter: brightness(120%) ;
-}
-
 .ltSide .baseline {
     border-left: 0.8vh solid white;
     border-right: 0.4vh solid white;
@@ -270,53 +258,11 @@ a {
     transition: opacity 150ms;
 }
 
-.layer:hover {
-    opacity: 100%;
-    transition: opacity 300ms ;
-}
-
-@keyframes toSolid {
-    0% {
-        opacity: 20%;
-    }
-
-    100% {
-        opacity: 40%;
-    }
-}
-
-@keyframes toColor {
-    0% {
-        background-image: url(../images/forehand.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    50% {
-        opacity: 20%;
-    }
-    51% {
-        background-color: #DF6536;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
 .blog {
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
         0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
-    animation: toColor 300ms ease-in;
-}
-
-.blog:hover {
-    text-shadow: 1.2px 0 #000000, -1.2px 0 #000000, 0 1.2px #000000, 0 -1.2px #000000,
-    0.6px 0.6px #000000, -0.6px -0.6px #000000, 0.6px -0.6px #000000, -0.6px 0.6px #000000;
-    background-image: url(../images/forehand.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: toSolid 150ms ease-in;
+    background: #DF6536 no-repeat; 
+    transition: background 300ms;
 }
 
 .blog b {
@@ -335,12 +281,6 @@ a {
     height: 5vh;
 }
 
-.link:hover {
-    color: #D61C4E;
-    text-decoration: underline #D61C4E;
-    cursor: pointer;
-}
-
 .address {
     background-image: url('../images/ball-in-court.jpg');
     background-size: 100% 100%;
@@ -356,11 +296,6 @@ a {
 .address .layer , .products .layer{
     opacity: 100%;
     background-color: #df663600;
-}
-
-.address .layer:hover, .products .layer:hover {
-    background-color: #df663670;
-    transition: background-color 150ms;
 }
 
 table, tr, th, td{
@@ -383,11 +318,6 @@ th, td {
 
 td {
     color: #EE3A1E;
-}
-
-table .data:hover {
-    color: black;
-    background-color: white;
 }
 
 .products {
