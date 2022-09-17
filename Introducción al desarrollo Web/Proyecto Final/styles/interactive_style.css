@@ -1,3 +1,7 @@
+h1:hover, h1:active {
+    text-shadow: 0 0 20px #981009;
+}
+
 .doubles:active, .products:active {
     filter: brightness(120%);
 }

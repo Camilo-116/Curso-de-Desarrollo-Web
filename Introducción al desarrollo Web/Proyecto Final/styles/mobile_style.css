@@ -1,0 +1,155 @@
+@media screen and (max-width: 767px) {
+    #court {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #court * {
+        display: inherit;
+    }
+
+    .baseline, .welcome p, .book p, .blog>*,
+    .layer, .schedule p, .results table {
+        display: none !important;
+    }
+
+    .ltSide, .rdSide {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .serve1, .serve2 {
+        flex-flow: column wrap;
+        flex: 2;
+        order: 2;
+    }
+
+    .serve1>*, .serve2>* {
+        flex: 1;
+        background-image: none;
+        background-color: #DF6536;
+    }
+
+    .serve1>*:active, .serve2>*:active {
+        filter: brightness(120%);
+    }
+
+    .welcome, .schedule {
+        flex: 1;
+        order: 1;
+    }
+
+    .book, .address {
+        flex: 1;
+        order: 3;
+        background-image: none;
+    }
+
+    .blog:hover, .results:hover, .doubles:hover {
+        background-image: none;
+        transition: none;
+    }
+
+    #court * {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .welcome {
+        border-top-left-radius: 10px !important;
+        border-top: 0.8vh solid white !important;
+        border-left: 0.8vh solid white !important;
+        border-right: 0.4vh solid white !important;
+        border-bottom: 0.4vh solid white !important;
+    }
+
+    .book {
+        border-top-right-radius: 10px !important;
+        border-top: 0.8vh solid white !important;
+        border-left: 0.4vh solid white !important;
+        border-right: 0.8vh solid white !important;
+        border-bottom: 0.4vh solid white !important;
+    }
+
+    .schedule {
+        border-bottom-left-radius: 10px !important;
+        border-top: 0.4vh solid white !important;
+        border-left: 0.8vh solid white !important;
+        border-right: 0.4vh solid white !important;
+        border-bottom: 0.8vh solid white !important;
+    }
+
+    .address {
+        border-bottom-right-radius: 10px !important;
+        border-top: 0.4vh solid white !important;
+        border-left: 0.4vh solid white !important;
+        border-right: 0.8vh solid white !important;
+        border-bottom: 0.8vh solid white !important;
+    }
+
+    .b1 {
+        border-top: 0.8vh solid white !important;
+    }
+
+    .b2 {
+        border-bottom: 0.8vh solid white !important;
+    }
+
+    .welcome::after, .serve1>*::after, .schedule::after,
+    .address::after, .serve2>*::after, .book::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+
+    .welcome::after {
+        background-image: url(../images/volley.jpg);
+    }
+
+    .book::after {
+        background-image: url(../images/backhand.jpg);
+    }
+
+    .schedule::after {
+        background-image: url(../images/serve.jpg);
+    }
+
+    .address::after {
+        background-image: url(../images/net.jpg);
+    }
+
+    .serve1>*::after, .serve2>*::after {
+        display: inherit;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .b1::after {
+        content: '¡Bienvenido a tu club de tenis!';
+        font-weight: bold;
+    }
+
+    .products::after {
+        content: 'Horarios: \A L-V: 6 a.m - 8 p.m \A S,D,F: 6-9 a.m';
+        white-space: pre;
+        font-size: 0.8em;
+        text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000, 
+        0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
+    }
+
+    .results::after {
+        content: 'Agenda aquí tus clases grupales y privadas.';
+        font-size: 0.8em;
+        text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000, 
+        0.5px 0.5px #000000, -0.5px -0.5px #000000, 0.5px -0.5px #000000, -0.5px 0.5px #000000;
+    }
+
+    .b2::after {
+        content: 'Nos encuentras en el complejo de Tenis de Valledupar, Cesar. Carrera 19C #13c Bis.';
+        font-size: 0.8em;
+    }
+}
