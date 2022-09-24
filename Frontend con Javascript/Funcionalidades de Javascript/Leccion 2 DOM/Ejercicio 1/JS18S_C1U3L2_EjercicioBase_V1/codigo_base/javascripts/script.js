@@ -99,4 +99,3 @@ function confCh(checkBox) {
   document.getElementById("errorTerm").innerText = ""
   return true
 }
-

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        span::before {
+            content: "Ultimo país visitado: ";
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="paises">Paises visitados</label>
+        <select name="paises" id="paises">
+            <option value="colombia">Colombia</option>
+            <option value="peru">Peru</option>
+            <option value="chile">Chile</option>
+            <option value="francia">Francia</option>
+        </select>
+        <span id="paisV"><script>getPais()</script></span>
+        <button type="submit" onclick="cambiarPais()">Enviar</button>
+    </form>
+    <script src="./javascripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    margin: 20px;
+    padding: 0;
+    align-items: initial;
+}
+
+* {
+    font-size:xx-large;
+}
+
+span,div {
+    border: 2px solid black
+}
+
+#t1 {
+    margin-right: 5px;
+}
+
+#t2 {
+    margin-left: 5px;
+}
+
+#content {
+    width: fit-content;
+}
