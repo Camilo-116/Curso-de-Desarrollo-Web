@@ -21,3 +21,5 @@ function cambiarPais() {
 function getPais() {
     return document.getElementById('paisV').innerHTML = localStorage.getItem('pais');
 }
+
+getPais()
