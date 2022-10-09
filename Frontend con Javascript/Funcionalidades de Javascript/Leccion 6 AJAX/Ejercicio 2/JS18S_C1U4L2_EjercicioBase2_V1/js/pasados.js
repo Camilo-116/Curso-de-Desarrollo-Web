@@ -3,7 +3,7 @@
 //Define las variables que necesites
 
 $(document).ready(function () {
-  var json, ref, eventos
+  let json, ref, eventos
 
   //Carga los datos que estan en el JSON (info.json) usando AJAX
   $.ajax({
