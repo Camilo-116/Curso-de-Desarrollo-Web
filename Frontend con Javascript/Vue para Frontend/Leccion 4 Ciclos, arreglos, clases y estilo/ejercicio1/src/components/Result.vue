@@ -2,7 +2,8 @@
     <div class="result">
         <div class="score">
             <strong>
-                <p>{{t1_score}} - {{p1}}<br>{{t2_score}} - {{p2}}</p>
+                <p :class="{ganador: t2_score < t1_score, perdedor: t2_score > t1_score, empatado: t1_score==t2_score}">{{t1_score}} - {{p1}}</p>
+                <p :class="{ganador: t2_score > t1_score, perdedor: t2_score < t1_score, empatado: t1_score==t2_score}">{{t2_score}} - {{p2}}</p>
             </strong>
         </div>
         <img class="img" :src="require(`../assets/${imgURL}`)" alt="Marcador de partido">
@@ -24,7 +25,6 @@ export default {
 </script>
 
 <style scoped>
-
 * {
     box-sizing: border-box;
 }
@@ -34,7 +34,8 @@ export default {
     width: 50%;
     padding: 0.5em
 }
-.img{
+
+.img {
     display: inherit;
     width: 60%;
     height: 25vh
@@ -55,4 +56,16 @@ export default {
     margin-left: 5%;
 }
 
+.ganador {
+    color: rgb(16, 163, 0);
+}
+
+.perdedor {
+    color: rgb(127, 0, 0);
+    font-weight: 600;
+}
+
+.empatado {
+    color: rgb(107, 107, 107);
+}
 </style>

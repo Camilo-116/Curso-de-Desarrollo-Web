@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+}
+
+button {
+    font-size: 1.5em;
+    background-color: rgb(54, 8, 128);
+    color: aliceblue;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+[id^="submit"] {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+    border-top: 1px solid black;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#header {
+    display: flex;
+    height: 10vh;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 1px black;
+    padding: 5vh 0 4vh 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-image: url(../assets/banner.jpg);
+}
+
+#logo, .menu {
+    display: inherit;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: right;
+    margin-right: 1vw;
+}
+
+.menu img, #logo img {
+    height: 90%;
+    filter: invert(100%);
+}
+
+.menu img {
+    height: 80%;
+    cursor: pointer;
+}
+
+#body {
+    margin: 3vh 2vw 3vh 2vw;
+    text-align: left;
+}
+
+.tit-cuerpo-1,
+.tit-cuerpo-2 {
+    font-weight: bold;
+}
+
+.tit-cuerpo-1 {
+    font-size: 1.5em;
+}
+
+.tit-cuerpo-2 {
+    font-size: 1.3em;
+    padding-left: 2vw;
+    margin-bottom: 0;
+}
+
+.fecha-header {
+    display: inherit;
+    flex-flow: row nowrap;
+    border-bottom: 2px solid black;
+    padding: 1vh 0 1vh 0;
+    align-items: center;
+}
+
+.ico-edit {
+    padding-left: 1vw;
+    height: 3.5vh;
+}
+
+.ico-edit:hover {
+    cursor: pointer;
+}
+
+.fecha {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 5vh;
+    border: 2px solid black;
+}
+
+.results {
+    display: inherit;
+    margin: 0 5vw 0 5vw;
+    flex-flow: row wrap;
+    font-weight: 900;
+}
+
+.fecha-inputs {
+    display: inherit;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.inputs {
+    display: inherit;
+    padding: 0 5vw 0 5vw;
+    flex-flow: row wrap;
+}
+
+.tab {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 20vw;
+    background-color: #912ED5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-left: 5px solid #230065;
+}
+
+.tab-enter-active {
+    transition: all 0.2s ease-out;
+}
+
+.tab-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.tab-enter-from,
+.tab-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.close-ico {
+    display: inline-block;
+    cursor: pointer;
+    width: 3.5vh;
+    height: 3.5vh;
+    position: fixed;
+    right: 2vh;
+    top: 2vh;
+    filter: invert(100%);
+}
+
+.opciones {
+    display: inherit;
+    flex-flow: inherit;
+    margin-top: 8vh;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.table-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 15vw;
+    width: 100%;
+    justify-content: center;
+}
+
+.table-container table {
+    text-align: center;
+    width: 80%
+}
+
+thead {
+    background-color: #230065;
+    color: white;
+    font-weight: 600;
+}
+
+.clasificado {
+    background-color: rgba(124, 255, 176, 0.611);
+    color: black;
+}
+
+.repechaje {
+    background-color: rgba(124, 172, 255, 0.632);
+    color: black;
+}
+
+.no-clasificado {
+    background-color: rgb(255, 155, 148,0.632);
+    color: black;
+}
