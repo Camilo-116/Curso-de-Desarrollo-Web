@@ -273,9 +273,6 @@ export default {
       p: p_ord,
       resultados: results
     }
-  },
-  watch: {
-    fechas: {}
   }
 }
 </script>
