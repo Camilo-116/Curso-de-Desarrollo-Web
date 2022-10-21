@@ -1,0 +1,69 @@
+/*Menu*/
+  .bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: auto;
+    right: 36px;
+    top: 36px;
+    cursor: pointer;
+  }
+  .bm-burger-button.hidden {
+    display: none;
+  }
+  .bm-burger-bars {
+    background-color: white;
+  }
+  .line-style {
+    position: absolute;
+    height: 20%;
+    left: 0;
+    right: 0;
+  }
+  .cross-style {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    cursor: pointer;
+  }
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  .bm-cross-button.hidden {
+    display: none;
+  }
+  .bm-menu {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1000; /* capa exterior */
+    top: 0;
+    left: 0;
+    background-color: #21334d; 
+    overflow-x: hidden; /* Scroll horizontal desactivado */
+    padding-top: 60px;
+    transition: 0.5s; /*0.5 segundos efecto de transición slide en la barraNavegacion*/
+  }
+  .bm-item-list {
+    color: white;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+  .bm-item-list > * {
+    display: flex;
+    text-decoration: none;
+    padding: 0.7em;
+  }
+  .bm-item-list > * > span {
+    margin-left: 10px;
+    font-weight: 700;
+    color: white;
+  }
+  .bmItemListSelected {
+    font-size: 24px;
+    opacity: 20%;
+  }

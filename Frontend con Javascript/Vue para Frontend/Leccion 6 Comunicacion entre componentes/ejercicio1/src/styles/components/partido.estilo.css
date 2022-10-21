@@ -1,0 +1,57 @@
+.ganador {
+    color: green;
+    font-weight: 600;
+}
+.empate {
+    color: gray;
+    font-weight: 600;
+}
+.perdedor {
+    color:red;
+    font-weight: 300;
+}
+.seleccion {
+    font-size: 28px;
+}
+.ancho-50 {
+    width: 48%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ancho-100 {
+    width: 100%;
+    margin: 0;
+}
+.centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.directionRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 15px 10px;
+}
+.input-resultado {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    text-align: center;
+}
+.input-imagen {
+    width: 80%;
+    height: 32px;
+    text-align: center;
+}
+.enviar {
+    background-color: #21334d;
+    border-radius: 20px;
+    color: #f0f0f0;
+    font-size: 20px;
+    padding: 10px 20px;
+}

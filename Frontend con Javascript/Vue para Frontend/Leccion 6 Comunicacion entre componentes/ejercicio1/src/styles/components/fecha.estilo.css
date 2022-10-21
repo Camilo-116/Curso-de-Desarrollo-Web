@@ -1,0 +1,15 @@
+.fecha{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+}
+.partido{
+    width: 48%;
+    margin: 0;
+}
+.subtitulo-cuerpo {
+    font-weight: 900;
+    font-size: 32px;
+    color: #21334d;
+}

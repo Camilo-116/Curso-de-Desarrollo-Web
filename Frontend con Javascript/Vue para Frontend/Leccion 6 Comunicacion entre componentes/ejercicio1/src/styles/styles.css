@@ -1,0 +1,99 @@
+/* Estilos generales */
+main {
+  background-color:white;
+}
+body {
+  background-color:lightgrey !important;
+  font-family: 'Muli', sans-serif !important;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  border-radius: 0px 0px 30px 30px;
+  border: none;
+  background-size: 100% 100%;
+  background-image: url(../../public/assets/background_bnr.jpg);
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+.titulo-cabezera {
+  font-weight: 900;
+  font-size: 32px;
+  color: #f0f0f0;
+}
+.titulo-cuerpo {
+  font-weight: 900;
+  font-size: 32px;
+  margin-left: -25px;
+  color: #21334d;
+}
+.cuerpo{
+  padding: 30px 0 30px 5% ;
+  align-content: center;
+}
+.center-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icono-cabezera {
+  height: 3.75rem;
+  vertical-align: text-top;
+}
+
+/* Estilos tabla */
+th {
+  background-color: #21334d;
+  color: white;
+  width: 100px;
+}
+.celda {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clasificado {
+  background-color: #E3FFE2;
+}
+.clasificadoRepesca {
+  background-color: #e2e8ff;
+}
+.noClasificado {
+  background-color: #FFE2E2;
+}
+
+/* Estilos resultados */
+
+
+.resultado{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+}
+.izquierda {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.derecha {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.equipos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+.icono-editar{
+  height: 20px;
+}
+.equipo {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}

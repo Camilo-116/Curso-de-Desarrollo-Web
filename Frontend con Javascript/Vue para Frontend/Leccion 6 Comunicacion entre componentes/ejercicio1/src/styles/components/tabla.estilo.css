@@ -1,0 +1,21 @@
+/* Estilos tabla */
+th {
+    background-color: #21334d;
+    color: white;
+    width: 100px;
+}
+.celda {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clasificado {
+    background-color: #E3FFE2;
+}
+.clasificadoRepesca {
+    background-color: #e2e8ff;
+}
+.noClasificado {
+    background-color: #FFE2E2;
+}
