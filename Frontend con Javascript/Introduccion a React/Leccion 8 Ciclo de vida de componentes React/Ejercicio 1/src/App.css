@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+i {
+  width: 50px;
+}
+
+span {
+  display: inherit;
+  align-items: center;
+  width: fit-content !important;
+  margin: auto 0 !important;
+  margin: 0 !important;
+  font-weight: bold !important;
+  align-items: center;
+}
+
+.container {
+  width: fit-content !important;
+}
