@@ -1,0 +1,27 @@
+#header {
+    box-sizing: border-box !important;
+    display: flex;
+    padding: 10px 2vw 10px 4vw;
+    height: 12vh;
+}
+
+#header > * {
+    box-sizing: border-box !important;
+}
+
+#logo {
+    width: fit-content;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo img {
+    height: 8.5vh;
+    width: auto;
+}
+
+.drop {
+    box-sizing: border-box;
+}

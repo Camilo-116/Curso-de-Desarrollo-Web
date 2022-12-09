@@ -1,0 +1,17 @@
+#inicio {
+  margin: 2vh 15vw 7vh 15vw !important;
+  box-sizing: border-box !important;
+}
+
+#inicio * {
+  box-sizing: border-box !important;
+}
+
+.index-card {
+  height: 400px;
+  background-color: rgba(103, 119, 156, 0.355);
+}
+
+.info {
+  height: 100%;
+}
