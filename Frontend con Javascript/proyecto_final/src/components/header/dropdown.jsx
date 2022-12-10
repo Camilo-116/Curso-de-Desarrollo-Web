@@ -9,7 +9,7 @@ class NavDropdown extends Component {
 
     render() {
         return (
-            <div className='drop col-8 d-flex justify-content-end align-items-center p-0'>
+            <div className='drop col-8 d-flex justify-content-end align-items-center p-0 me-5'>
                 <div className="dropdown">
                     <button className="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16" />

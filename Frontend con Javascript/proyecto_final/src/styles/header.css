@@ -1,7 +1,7 @@
 #header {
     box-sizing: border-box !important;
     display: flex;
-    padding: 10px 2vw 10px 4vw;
+    padding: 10px 40px 10px 4vw;
     height: 12vh;
 }
 

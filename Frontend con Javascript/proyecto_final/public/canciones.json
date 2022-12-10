@@ -1,0 +1,33 @@
+{
+    "canciones": [{
+            "nombre": "Sere",
+            "ruta": "Sere-DJSpinall.mp3",
+            "reproducciones": 600,
+            "icono": "Sere-DJSpinall.jpg"
+        },
+        {
+            "nombre": "The Mood",
+            "ruta": "Timaya-The-Mood.mp3",
+            "reproducciones": 1500,
+            "icono": "Timaya-The-Mood.jpg"
+        },
+        {
+            "nombre": "KU LO SA",
+            "ruta": "Oxlade-KU-LO-SA-A-COLORS-SHOW.mp3",
+            "reproducciones": 800,
+            "icono": "Oxlade-KU-LO-SA-A-COLORS-SHOW.jpg"
+        },
+        {
+            "nombre": "Ego",
+            "ruta": "1da-Banton-Ego.mp3",
+            "reproducciones": 900,
+            "icono": "1da-Banton-Ego.jpg"
+        },
+        {
+            "nombre": "Kokose",
+            "ruta": "Oxlade-Kokose",
+            "reproducciones": 1300,
+            "icono": "Oxlade-kokose"
+        }
+    ]
+}

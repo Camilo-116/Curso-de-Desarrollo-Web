@@ -8,7 +8,7 @@
 }
 
 .index-card {
-  height: 400px;
+  height: fit-content;
   background-color: rgba(103, 119, 156, 0.355);
 }
 
