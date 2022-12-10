@@ -25,9 +25,9 @@
         },
         {
             "nombre": "Kokose",
-            "ruta": "Oxlade-Kokose",
+            "ruta": "Oxlade-Kokose.mp3",
             "reproducciones": 1300,
-            "icono": "Oxlade-kokose"
+            "icono": "Oxlade-kokose.jpg"
         }
     ]
 }

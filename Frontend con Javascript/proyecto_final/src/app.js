@@ -32,21 +32,6 @@ class App extends Component {
             .then(result => this.setState({ canciones: result.canciones }));
     }
 
-    // shouldComponentUpdate(nextProps, nextState, nextContext) {
-    //     if (nextState.canciones !== this.state.canciones) {
-    //         console.log('canciones actualizadas')
-    //         return true
-    //     } else {
-    //         if (nextState !== this.state) {
-    //             console.log('state actualizado')
-    //             return true
-    //         } else {
-    //             console.log('no se actualiza')
-    //             return false
-    //         }
-    //     }
-    // }
-
     render() {
         return (
             <React.Fragment>
