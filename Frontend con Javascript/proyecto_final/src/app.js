@@ -11,7 +11,8 @@ class App extends Component {
         super(props);
         this.state = {
             pagina: 0,
-            showContact: false
+            showContact: false,
+            canciones: []
         }
     }
 
@@ -34,7 +35,7 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Header pagina={this.state.pagina} contacto={this.state.showContact} navigation={this.navigate} />
-                <Body pagina={this.state.pagina} />
+                <Body pagina={this.state.pagina} canciones={this.state.canciones} />
                 <Footer pagina={this.state.pagina} />
                 {this.state.showContact ? <ContactDialog showContact={this.state.showContact} disposeDialog={() => this.setState({ showContact: false })} /> : null}
             </React.Fragment>

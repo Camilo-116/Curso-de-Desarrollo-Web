@@ -15,3 +15,22 @@
 .info {
   height: 100%;
 }
+
+.imagen img {
+  transition: left .5s ease-in-out;
+}
+
+.going-out {
+  position: absolute;
+  left: -100%;
+}
+
+.is-out{
+  position: absolute;
+  left: 100%;
+}
+
+.going-in {
+  position: relative;
+  left: 0;
+}

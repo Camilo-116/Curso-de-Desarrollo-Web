@@ -13,9 +13,12 @@ class Body extends React.Component {
     render() {
         switch (this.props.pagina) {
             case 0:
-                return <Inicio />;
+                let canciones_top = []
+                this.props.canciones.sort((a, b) => (a.reproducciones >= b.reproducciones) ? 1 : -1)
+                canciones_top = this.props.canciones.slice(0, 3)
+                return <Inicio canciones_top={canciones_top} />;
             case 1:
-                return <Canciones />;
+                return <Canciones canciones={this.props.canciones} />;
             case 3:
                 return <Login />;
             case 4:

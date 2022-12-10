@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Slider from './slider.jsx'
+import Carousel from './carousel.jsx'
+import Reproductor from './reproductor.jsx';
 
 class Inicio extends Component {
     constructor(props) {
@@ -8,6 +9,12 @@ class Inicio extends Component {
     }
 
     render() {
+        let tiles = []
+        if (this.props.canciones_top) {
+            for (let i = 0; this.props.canciones_top.length; i++) {
+                tiles.add(<Reproductor cancion={this.props.canciones_top[i]} />)
+            }
+        }
         return (
             <div id="inicio" className='d-flex flex-column'>
                 <div className='index-card w-100 container'>
@@ -21,11 +28,24 @@ class Inicio extends Component {
                                 </div>
                             </div>
                         </div>
-                        <Slider/>
+                        <div className='imagen col-sm-6 col-xs-12 h-100 p-0 overflow-hidden position-relative'>
+                            {Carousel()}
+                        </div>
                     </div>
                 </div>
-                <div className='top-songs w-100 container'>
-
+                <div className='top-songs w-100 container text-center mt-4'>
+                    <div className='h2 fw-bold border-top pt-2 pb-2'>
+                        Top Canciones
+                    </div>
+                    <div className='row border-top border-bottom border-2 shadow-sm pt-1 pb-1'>
+                        <div className='d-xs-none col-4 lead'>
+                            Nombre
+                        </div>
+                        <div className='col-xs-12 col-8'>
+                            Canción
+                        </div>
+                    </div>
+                    {(tiles.length > 0) ? tiles : null}
                 </div>
             </div>
         );
