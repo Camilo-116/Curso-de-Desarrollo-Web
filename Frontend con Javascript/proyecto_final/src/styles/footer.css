@@ -10,3 +10,9 @@
     height: 6vh;
     width: 90vw;
 }
+
+@media screen and (max-width: 768px) {
+    #footer p {
+        font-size: 1em;
+    }
+}

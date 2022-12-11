@@ -42,7 +42,7 @@ class Registro extends Component {
         if (this.generoRef.current.value === '') {
             errorGenero = true;
         }
-        for (let i = 0; i < checks.length-1; i++) {
+        for (let i = 0; i < checks.length - 1; i++) {
             if (checks[i].checked) {
                 errorEdad = false;
             }
@@ -100,7 +100,7 @@ class Registro extends Component {
 
     render() {
         return (
-            <div id='login'>
+            <div id='registro'>
                 <div className='container mt-5'>
                     <div className='row'>
                         <div className='col-12'>
@@ -174,7 +174,7 @@ class Registro extends Component {
                                                 <input className="form-check-input" ref={this.terminosRef} type="checkbox" value="" id="checkTerminos" />
                                                 <label className="form-check-label ps-2 small" htmlFor="checkTerminos">
                                                     Acepto los términos y condiciones de uso.
-                                                    {(this.state.errorTerminos) ? <span className='text-danger fw-light small ms-3'>Aceptar los término y condiciones es obligatorio</span> : null}
+                                                    {(this.state.errorTerminos) ? <><br /><span className='text-danger fw-light small'>Aceptar los término y condiciones es obligatorio</span></> : null}
                                                 </label>
                                             </div>
                                             <button type='button' className='btn btn-primary rounded' onClick={this.validateInput}>Registrarse</button>

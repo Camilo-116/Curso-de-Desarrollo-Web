@@ -7,7 +7,7 @@
   box-sizing: border-box !important;
 }
 
-#login {
+#login, #registro {
   margin: 2vh 30vw 7vh 30vw !important;
   box-sizing: border-box !important;
 }
@@ -15,6 +15,10 @@
 .index-card {
   height: fit-content;
   background-color: rgba(103, 119, 156, 0.355);
+}
+
+.index-card-title {
+  font-family: Matiott;
 }
 
 .card-rack, .card-rack * {
@@ -50,4 +54,11 @@
 
 .card-icon {
   background-color: rgba(185, 185, 185, 0.601);
+}
+
+@media screen and (max-width: 768px) {
+  #login, #registro {
+    margin: 2vh 5vw 7vh 5vw !important;
+    box-sizing: border-box !important;
+  }
 }

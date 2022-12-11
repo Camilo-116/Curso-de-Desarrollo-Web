@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Berold;
+    src: url("berold.regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Matiott;
+    src: url("./matiottElegant.otf") format("opentype");
+}

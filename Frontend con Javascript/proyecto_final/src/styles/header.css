@@ -5,12 +5,16 @@
     height: 12vh;
 }
 
-#header > * {
+#header>* {
     box-sizing: border-box !important;
 }
 
 #logo {
     width: fit-content;
+}
+
+#logo p {
+    font-family: Matiott !important;
 }
 
 #logo:hover {
@@ -24,4 +28,16 @@
 
 .drop {
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 1215px) {
+    .filled {
+        padding: calc(0.25*16px) calc(0.5*16px) calc(0.25*16px) calc(0.5*16px) !important;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .filled {
+      font-size: .8rem !important;
+    }
 }

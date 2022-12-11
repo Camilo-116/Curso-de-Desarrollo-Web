@@ -20,7 +20,7 @@ class CancionCard extends Component {
                         {this.props.cancion.nombre}
                     </div>
                     <div className='card-player'>
-                        <Player src={src} height={40} hideVolume></Player>
+                        <Player src={src} height={40} accent={[39, 128, 227]} hideVolume></Player>
                     </div>
                 </div>
             </div>

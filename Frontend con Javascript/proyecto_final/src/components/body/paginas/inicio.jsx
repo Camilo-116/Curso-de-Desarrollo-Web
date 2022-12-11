@@ -25,8 +25,8 @@ class Inicio extends Component {
                     <div className='row h-100 ps-5 pt-5 pb-5 pe-5'>
                         <div className='info col-xs-12 col-sm-6 h-100'>
                             <div className='col-12 align-self-center h-100 d-flex flex-column justify-content-start'>
-                                <div className='h1 lead fw-bold'>Canciones gratis para la comunidad!</div>
-                                <div className='pt-4 pb-4'>Con este sitio podrás escuchar audios de manera libre...</div>
+                                <div className='index-card-title h1 lead fw-bold'>Canciones gratis para la comunidad!</div>
+                                <div className='index-card-body pt-4 pb-4'>Con este sitio podrás escuchar audios de manera libre...</div>
                                 <div>
                                     <button className='btn btn-primary rounded' onClick={() => this.navigate(1)}>Ver Canciones</button>
                                 </div>

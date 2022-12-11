@@ -41,7 +41,7 @@ class Header extends React.Component {
         if (!this.state.mobile) {
             navMenu = <NavButtons contacto={this.props.contacto} pagina={this.props.pagina} navigation={this.navigate} />
         } else {
-            navMenu = <NavDropdown />
+            navMenu = <NavDropdown pagina={this.props.pagina} navigation={this.navigate} />
         }
         return (
             <div id="header" className="border-bottom border-primary shadow bg-light d-flex flex-row flex-nowrap row">
