@@ -1,9 +1,14 @@
-#inicio, #canciones{
+#inicio, #canciones {
   margin: 2vh 15vw 7vh 15vw !important;
   box-sizing: border-box !important;
 }
 
-#inicio *, #canciones * {
+#inicio *, #canciones *, #login * {
+  box-sizing: border-box !important;
+}
+
+#login {
+  margin: 2vh 30vw 7vh 30vw !important;
   box-sizing: border-box !important;
 }
 
@@ -33,7 +38,7 @@
   left: -100%;
 }
 
-.is-out{
+.is-out {
   position: absolute;
   left: 100%;
 }

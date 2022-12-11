@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Player } from 'react-simple-player'
 
 class CancionCard extends Component {
     constructor(props) {
@@ -19,9 +20,7 @@ class CancionCard extends Component {
                         {this.props.cancion.nombre}
                     </div>
                     <div className='card-player'>
-                        <audio className='rounded' controls>
-                            <source src={src} type="audio/mp3" />
-                        </audio>
+                        <Player src={src} height={40} hideVolume></Player>
                     </div>
                 </div>
             </div>

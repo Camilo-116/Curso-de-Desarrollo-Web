@@ -9,6 +9,9 @@ import Registro from './paginas/registro.jsx';
 
 class Body extends React.Component {
 
+    navigate = (pagina) => {
+        this.props.navigation(pagina);
+    }
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         return (nextProps.canciones !== this.props.canciones) ? true
@@ -23,7 +26,7 @@ class Body extends React.Component {
                 canciones_top.sort((a, b) => (a.reproducciones < b.reproducciones) ? 1 : -1)
                 canciones_top = canciones_top.slice(0, 3)
                 console.log(`Canciones top: ${canciones_top[0]}`)
-                return <Inicio canciones_top={canciones_top} />;
+                return <Inicio canciones_top={canciones_top} navigation={this.navigate}/>;
             case 1:
                 return <Canciones canciones={this.props.canciones} />;
             case 3:

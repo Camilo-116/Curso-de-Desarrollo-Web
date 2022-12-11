@@ -8,6 +8,10 @@ class Inicio extends Component {
         this.state = {}
     }
 
+    navigate = (pagina) => {
+        this.props.navigation(pagina);
+    }
+
     render() {
         let tiles = []
         if (this.props.canciones_top.length > 0) {
@@ -24,7 +28,7 @@ class Inicio extends Component {
                                 <div className='h1 lead fw-bold'>Canciones gratis para la comunidad!</div>
                                 <div className='pt-4 pb-4'>Con este sitio podrás escuchar audios de manera libre...</div>
                                 <div>
-                                    <button className='btn btn-primary rounded'>Ver Canciones</button>
+                                    <button className='btn btn-primary rounded' onClick={() => this.navigate(1)}>Ver Canciones</button>
                                 </div>
                             </div>
                         </div>
