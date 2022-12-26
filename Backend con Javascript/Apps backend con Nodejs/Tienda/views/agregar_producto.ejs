@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Añadir un nuevo producto al inventario</h1>
+    <form action="/agregar-producto" method="POST">
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="cantidad">Cantidad del producto:</label>
+        <input type="number" id="cantidad" name="cantidad"><br>
+        <label for="precio">Precio del producto:</label>
+        <input type="number" id="precio" name="precio"><br>
+        <button type="submit">Añadir producto</button>
+    </form>
+</body>
+</html>
