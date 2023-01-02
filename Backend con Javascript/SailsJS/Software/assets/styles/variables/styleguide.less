@@ -1,0 +1,65 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    padding: 10px 20px 10px 20px;
+    background-color: @primary;
+    h1 {
+        color: @primary-dark;
+    }
+}
+
+#inicio {
+    padding: 2vh 4vw 5vh 4vw;
+    p {
+        padding: 1vh 0 1vh 0;
+    }
+    h3 {
+        padding: .5vh 0 .5vh 0;
+    }
+    table {
+        margin-top: 2vh;
+        * {
+            padding: 1vh 1vw 1vh 1vw;
+            border: 1px solid @primary;
+        }
+        border-collapse: collapse;
+        th {
+            background-color: @primary-dark;
+            color: @primary-text;
+        }
+        tr:nth-child(odd) {
+            background-color: @primary-light;
+        }
+        tr:nth-child(even) {
+            background-color: @double-light;
+        }
+        tr:hover {
+            background-color: @accent-light;
+            color: @primary-text;
+        }
+    }
+}
+
+#crear-solicitud {
+    display: inline-block;
+    margin: 2vh 4vw 5vh 4vw;
+    p {
+        padding: 1vh 0 1vh 0;
+    }
+    .form-group {
+        padding: 2vh 0 2vh 0;
+        label {
+            padding: 0 .5vw 0 0;
+        }
+        input {
+            padding: .2vh .5vw .2vh .5vw;
+        }
+    }
+    button {
+        padding: 1vh 1vw 1vh 1vw;
+    }
+}

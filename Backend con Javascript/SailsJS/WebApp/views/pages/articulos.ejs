@@ -1,0 +1,26 @@
+<table border>
+  <tr>
+    <th>ID</th>
+    <th>Descripción</th>
+    <th>Precio</th>
+    <th>Modelo</th>
+    <th>Marca</th>
+    <th>Comentarios</th>
+  </tr>
+  <% articulos.forEach(articulo => { %>
+  <tr>
+    <td><%= articulo.id %></td>
+    <td><%= articulo.descripcion %></td>
+    <td><%= articulo.precio %></td>
+    <td><%= articulo.modelo %></td>
+    <td><%= articulo.marca %></td>
+    <td>
+      <ul>
+        <% articulo.comentarios.forEach(comentario => { %>
+        <li><%= comentario.descripcion %></li>
+        <% }) %>
+      </ul>
+    </td>
+  </tr>
+  <% }) %>
+</table>

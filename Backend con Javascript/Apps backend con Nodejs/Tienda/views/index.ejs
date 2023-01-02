@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<h1>Inventario</h1>
+		<nav><a href="/?ord=id">Id</a>/<a href="/?ord=nombre">Nombre</a>/<a href="/?ord=precio">Precio</a>/<a href="/?ord=cantidad">Cantidad</a></nav>
 		<p>Estos son los productos disponibles:</p>
 		<table border>
 			<thead>
@@ -13,12 +14,14 @@
 					<th>Nombre</th>
 					<th>Cantidad</th>
 					<th>Precio unitario</th>
+					<th>Acción</th>
 				</tr>
 				<% for( let i = 0; i < productos.length; i++ ) { %>
 				<tr>
 					<td><%= productos[i].nombre %></td>
 					<td><%= productos[i].cantidad %></td>
 					<td><%= productos[i].precio %></td>
+					<td style="text-align: center;"><a href="/eliminar-producto/<%=productos[i].id%>" >X</a></td>
 				</tr>
 				<% } %>
 			</thead>

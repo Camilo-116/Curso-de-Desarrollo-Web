@@ -1,0 +1,10 @@
+<div id="contacto" v-cloak>
+
+  <h1>Contáctanos por uno de estos medios:</h1>
+  <ul>
+    <li>Correo: <a href=""><%= email %> </a></li>
+    <li><%=sails.__("Teléfono: %s",numero)%> </li>
+    <li>Dirección: <%= direccion %> </li>  
+  </ul>
+</div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
